@@ -17,8 +17,17 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         _binding = FragmentMenuBinding.bind(view)
 
+        binding.mealsRecycler.adapter = MealsAdapter()
 
+        viewModel.meals.observe(viewLifecycleOwner) { meals ->
+            (binding.mealsRecycler.adapter as MealsAdapter).items = meals
+        }
 
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 }
