@@ -19,3 +19,21 @@ data class Meal(
     @SerialName("idMeal")
     val idMeal: String
 )
+
+@Serializable
+data class CategoriesResponse(
+    @SerialName("categories")
+    val categories: List<Category>
+)
+
+@Serializable
+data class Category(
+    @SerialName("idCategory")
+    val idCategory: String,
+    @SerialName("strCategory")
+    val strCategory: String,
+    @SerialName("strCategoryThumb")
+    val strCategoryThumb: String,
+    @SerialName("strCategoryDescription")
+    val strCategoryDescription: String
+)
