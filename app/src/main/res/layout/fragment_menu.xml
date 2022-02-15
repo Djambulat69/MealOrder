@@ -24,9 +24,12 @@
             android:id="@+id/category_tabs"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            app:tabBackground="@drawable/tab_background"
             app:tabIndicator="@null"
-            app:tabMinWidth="88dp"
-            app:tabMode="scrollable" />
+            app:tabMinWidth="100dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="?attr/colorPrimary"
+            app:tabTextColor="@color/grey" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

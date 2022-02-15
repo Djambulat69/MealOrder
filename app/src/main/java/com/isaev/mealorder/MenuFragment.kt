@@ -53,7 +53,6 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
                 )
             }
         }
-
     }
 
     override fun onDestroyView() {

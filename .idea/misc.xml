@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Djamb/AndroidStudioProjects/MealOrder/app/src/main/res/drawable/ic_menu_icon.xml" value="0.1855" />
+        <entry key="..\:/Users/Djamb/AndroidStudioProjects/MealOrder/app/src/main/res/drawable/tab_background.xml" value="0.202" />
+        <entry key="..\:/Users/Djamb/AndroidStudioProjects/MealOrder/app/src/main/res/drawable/tab_selected.xml" value="0.202" />
+        <entry key="..\:/Users/Djamb/AndroidStudioProjects/MealOrder/app/src/main/res/drawable/tab_unselected.xml" value="0.124" />
         <entry key="..\:/Users/Djamb/AndroidStudioProjects/MealOrder/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Djamb/AndroidStudioProjects/MealOrder/app/src/main/res/layout/category_item.xml" value="0.536" />
         <entry key="..\:/Users/Djamb/AndroidStudioProjects/MealOrder/app/src/main/res/layout/fragment_menu.xml" value="0.25416666666666665" />
