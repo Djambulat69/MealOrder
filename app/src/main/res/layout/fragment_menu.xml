@@ -12,48 +12,43 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|snap"
+            app:layout_scrollFlags="scroll"
             app:titleEnabled="false">
 
-            <com.google.android.material.appbar.MaterialToolbar
+            <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:title="Москва"
-                app:titleTextColor="@color/black" />
+                android:layout_height="120dp"
+                android:scrollbars="none"
+                app:layout_scrollFlags="scroll">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="112dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner" />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="112dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner" />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="112dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:scrollbars="none"
-            app:layout_scrollFlags="scroll|snap">
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="300dp"
-                    android:layout_height="112dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/banner" />
-
-                <ImageView
-                    android:layout_width="300dp"
-                    android:layout_height="112dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/banner" />
-
-                <ImageView
-                    android:layout_width="300dp"
-                    android:layout_height="112dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/banner" />
-            </LinearLayout>
-
-        </HorizontalScrollView>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/category_tabs"
