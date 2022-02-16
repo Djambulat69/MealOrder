@@ -1,5 +1,6 @@
 package com.isaev.mealorder
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -25,16 +26,28 @@ class MenuViewModel @Inject constructor(
 
     fun loadMeals(category: String) {
         viewModelScope.launch {
-            val newMeals = mealsRepository.getMealsByCategory(category)
-            _meals.value = newMeals
+            try {
+                val newMeals = mealsRepository.getMealsByCategory(category)
+                _meals.value = newMeals
+            } catch (e: Exception) {
+                Log.d(TAG, e.stackTraceToString())
+            }
         }
     }
 
     fun loadCategories() {
         viewModelScope.launch {
-            val newCategories = mealsRepository.getCategories()
-            _categories.value = newCategories
+            try {
+                val newCategories = mealsRepository.getCategories()
+                _categories.value = newCategories
+            } catch (e: Exception) {
+                Log.d(TAG, e.stackTraceToString())
+            }
         }
+    }
+
+    private companion object {
+        const val TAG = "MenuViewModel"
     }
 
 }
