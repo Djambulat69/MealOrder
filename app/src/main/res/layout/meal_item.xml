@@ -20,6 +20,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="22dp"
+        android:maxLength="30"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/meal_image"
@@ -37,4 +38,20 @@
         app:layout_constraintTop_toBottomOf="@id/meal_name"
         tools:text="Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/price_button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="8dp"
+        android:text="от 499 р"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="?attr/colorPrimary"
+        app:cornerRadius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="?attr/colorPrimary"
+        app:strokeWidth="1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
